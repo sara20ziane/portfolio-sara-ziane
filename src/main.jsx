@@ -1,19 +1,6 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import {
-  ArrowUpRight,
-  BriefcaseBusiness,
-  Code2,
-  Database,
-  ExternalLink,
-  Github,
-  LayoutTemplate,
-  Mail,
-  Menu,
-  PanelsTopLeft,
-  Sparkles,
-  X,
-} from 'lucide-react'
+import { ArrowUpRight, Code2, ExternalLink, Mail, Menu, Sparkles, X } from 'lucide-react'
 import './styles.css'
 import './case-study.css'
 import './improvements.css'
@@ -26,21 +13,21 @@ import shopflowAssistant from './assets/shopflow-assistant-ia.png'
 
 const services = [
   {
-    icon: LayoutTemplate,
+    icon: Code2,
     title: 'Site vitrine professionnel',
     description:
       'Un site clair et responsive pour présenter votre activité, rassurer vos prospects et faciliter la prise de contact.',
     details: ['Structure et contenu', 'Design mobile', 'Formulaire de contact'],
   },
   {
-    icon: PanelsTopLeft,
+    icon: Sparkles,
     title: 'Landing page',
     description:
       'Une page ciblée pour lancer une offre, présenter un service ou transformer davantage de visiteurs en demandes.',
     details: ['Message commercial', 'Appel à l’action', 'Mise en ligne rapide'],
   },
   {
-    icon: Database,
+    icon: ExternalLink,
     title: 'Outil métier personnalisé',
     description:
       'Une interface adaptée à votre façon de travailler pour centraliser les informations et réduire les tâches manuelles.',
@@ -209,7 +196,7 @@ function App() {
           </div>
 
           <div className="service-banner">
-            <BriefcaseBusiness size={22} />
+            <Sparkles size={22} />
             <p>
               <strong>Vous avez seulement une idée ou un besoin mal défini ?</strong>
               <span> Je peux aussi vous aider à clarifier la solution avant de commencer le développement.</span>
@@ -464,7 +451,7 @@ function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <Github size={18} /> Voir mon GitHub
+              <Code2 size={18} /> Voir mon GitHub
             </a>
             <small>Disponible à Alger et à distance.</small>
           </div>
